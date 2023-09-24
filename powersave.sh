@@ -1,9 +1,4 @@
 #!/bin/sh
-service jail onestop browser
-
-# downgrade UI for improved battery life
-killall picom
-
 usbconfig -d ugen0.1 power_off
 usbconfig -d ugen1.1 power_off
 # turn off webcam

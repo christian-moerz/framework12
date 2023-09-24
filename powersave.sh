@@ -1,6 +1,7 @@
 #!/bin/sh
-usbconfig -d ugen0.1 power_off
-usbconfig -d ugen1.1 power_off
+# this did give errors but still put USB bus into power save
+usbconfig -d ugen0.1 power_save
+usbconfig -d ugen1.1 power_save
 # turn off webcam
 usbconfig -d ugen1.2 power_off
 usbconfig -d ugen1.3 power_off

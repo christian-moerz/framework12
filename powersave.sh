@@ -8,8 +8,6 @@ usbconfig -d ugen1.3 power_off
 sysctl hw.snd.latency=7
 sysctl hw.pci.do_power_nodriver=3
 
-EXTREME=0
-
 while getopts 'xwb' opt; do
 	case "$opt" in
 		x)
@@ -21,8 +19,15 @@ while getopts 'xwb' opt; do
 		sysctl dev.hwpstate_intel.5.epp=100
 		sysctl dev.hwpstate_intel.6.epp=100
 		sysctl dev.hwpstate_intel.7.epp=100
+		sysctl dev.hwpstate_intel.8.epp=100
+		sysctl dev.hwpstate_intel.9.epp=100
+		sysctl dev.hwpstate_intel.10.epp=100
+		sysctl dev.hwpstate_intel.11.epp=100
+		sysctl dev.hwpstate_intel.12.epp=100
+		sysctl dev.hwpstate_intel.13.epp=100
+		sysctl dev.hwpstate_intel.14.epp=100
+		sysctl dev.hwpstate_intel.15.epp=100
 		sysctl hw.pci.do_power_nodriver=3
-		# sysctl hw.acpi.video.lcd0.brightness=10
 		;;
 		w)
 		devctl suspend iwlwifi0

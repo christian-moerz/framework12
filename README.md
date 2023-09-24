@@ -18,3 +18,14 @@ and other relevant settings.
 If you have any suggestions or improvements you like to share, feel free to
 reach out or run a pull request.
 
+# Expected battery life
+
+My tests so far have shown that I can get up to 10-11 hours with battery charged
+at around 80%. I'm seeing 3-5W draw on an idle system. So the more you load the
+system with I/O or CPU work, the more power it will obviusly draw and shorten
+battery life.
+
+If you're using a reasonably low-power window manager, you can probably expect
+around 8 hours of work on battery.
+
+

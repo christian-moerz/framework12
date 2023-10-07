@@ -40,3 +40,7 @@ while getopts 'xwb' opt; do
 	esac
 done
 sysctl hw.usb.disable_port_power=1
+
+cpuset -C -l 14-15 -p 0
+cpuset -l 14-15 -s -1
+cpuset -l 14-15 -s 1
